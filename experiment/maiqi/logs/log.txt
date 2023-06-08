@@ -1,0 +1,754 @@
+all - ------------------train------------------
+all - ------------------train------------------
+all - ------------------train------------------
+all - Epoch: 0, accuracy= 0.427750, mIoU= 0.200252 loss= 2.117639
+all - Category_IOU
+label0    0.492646
+label1    0.211429
+label2    0.147857
+label3    0.131780
+label4    0.171606
+label5    0.065914
+label6    0.025448
+label7    0.355333
+Name: mean_iou, dtype: float64
+all - Epoch: 2, accuracy= 0.771563, mIoU= 0.498001 loss= 1.587364
+all - Category_IOU
+label0    0.797878
+label1    0.541480
+label2    0.601407
+label3    0.412226
+label4    0.494668
+label5    0.415078
+label6    0.170631
+label7    0.550643
+Name: mean_iou, dtype: float64
+all - Epoch: 4, accuracy= 0.845500, mIoU= 0.624881 loss= 1.024230
+all - Category_IOU
+label0    0.831020
+label1    0.522696
+label2    0.720241
+label3    0.707040
+label4    0.773126
+label5    0.655645
+label6    0.214126
+label7    0.575158
+Name: mean_iou, dtype: float64
+all - Epoch: 6, accuracy= 0.882062, mIoU= 0.680881 loss= 0.755520
+all - Category_IOU
+label0    0.875929
+label1    0.611413
+label2    0.852207
+label3    0.794702
+label4    0.829569
+label5    0.706981
+label6    0.186483
+label7    0.589763
+Name: mean_iou, dtype: float64
+all - Epoch: 8, accuracy= 0.918500, mIoU= 0.765685 loss= 0.593348
+all - Category_IOU
+label0    0.913112
+label1    0.671942
+label2    0.917169
+label3    0.889632
+label4    0.880629
+label5    0.767587
+label6    0.426129
+label7    0.659278
+Name: mean_iou, dtype: float64
+all - Epoch: 10, accuracy= 0.930500, mIoU= 0.797444 loss= 0.489588
+all - Category_IOU
+label0    0.921160
+label1    0.671485
+label2    0.946530
+label3    0.941525
+label4    0.906480
+label5    0.776623
+label6    0.495747
+label7    0.720000
+Name: mean_iou, dtype: float64
+all - Epoch: 12, accuracy= 0.944187, mIoU= 0.830078 loss= 0.409886
+all - Category_IOU
+label0    0.933741
+label1    0.697966
+label2    0.964342
+label3    0.948936
+label4    0.945824
+label5    0.858311
+label6    0.566751
+label7    0.724754
+Name: mean_iou, dtype: float64
+all - Epoch: 14, accuracy= 0.952812, mIoU= 0.857151 loss= 0.347713
+all - Category_IOU
+label0    0.942929
+label1    0.757208
+label2    0.970032
+label3    0.953925
+label4    0.940691
+label5    0.868959
+label6    0.654088
+label7    0.769376
+Name: mean_iou, dtype: float64
+all - Epoch: 16, accuracy= 0.961938, mIoU= 0.883054 loss= 0.297741
+all - Category_IOU
+label0    0.952119
+label1    0.785479
+label2    0.974617
+label3    0.957338
+label4    0.960486
+label5    0.915014
+label6    0.710037
+label7    0.809339
+Name: mean_iou, dtype: float64
+all - Epoch: 18, accuracy= 0.971562, mIoU= 0.917370 loss= 0.256715
+all - Category_IOU
+label0    0.958967
+label1    0.824345
+label2    0.978284
+label3    0.965547
+label4    0.970000
+label5    0.931232
+label6    0.832090
+label7    0.878495
+Name: mean_iou, dtype: float64
+all - ------------------train------------------
+all - Epoch: 0, accuracy= 0.418250, mIoU= 0.145040 loss= 2.117908
+all - Category_IOU
+label0    0.497371
+label1    0.166770
+label2    0.206036
+label3    0.056888
+label4    0.003101
+label5    0.057429
+label6    0.042831
+label7    0.129891
+Name: mean_iou, dtype: float64
+all - Epoch: 2, accuracy= 0.703438, mIoU= 0.381415 loss= 1.556288
+all - Category_IOU
+label0    0.794450
+label1    0.378342
+label2    0.433091
+label3    0.187817
+label4    0.228881
+label5    0.431099
+label6    0.171053
+label7    0.426586
+Name: mean_iou, dtype: float64
+all - Epoch: 4, accuracy= 0.826063, mIoU= 0.587381 loss= 1.017794
+all - Category_IOU
+label0    0.821250
+label1    0.526846
+label2    0.694399
+label3    0.622975
+label4    0.687415
+label5    0.618353
+label6    0.165541
+label7    0.562270
+Name: mean_iou, dtype: float64
+all - Epoch: 6, accuracy= 0.875000, mIoU= 0.653655 loss= 0.745174
+all - Category_IOU
+label0    0.885441
+label1    0.582540
+label2    0.837123
+label3    0.695688
+label4    0.765655
+label5    0.696335
+label6    0.197842
+label7    0.568613
+Name: mean_iou, dtype: float64
+all - Epoch: 8, accuracy= 0.904375, mIoU= 0.730292 loss= 0.589794
+all - Category_IOU
+label0    0.904510
+label1    0.693732
+label2    0.901277
+label3    0.831070
+label4    0.823690
+label5    0.744027
+label6    0.325495
+label7    0.618533
+Name: mean_iou, dtype: float64
+all - Epoch: 10, accuracy= 0.927188, mIoU= 0.782257 loss= 0.479663
+all - Category_IOU
+label0    0.923320
+label1    0.721713
+label2    0.953174
+label3    0.916805
+label4    0.895155
+label5    0.758037
+label6    0.411400
+label7    0.678448
+Name: mean_iou, dtype: float64
+all - Epoch: 12, accuracy= 0.943688, mIoU= 0.830009 loss= 0.402843
+all - Category_IOU
+label0    0.935319
+label1    0.753049
+label2    0.963950
+label3    0.948893
+label4    0.929641
+label5    0.835420
+label6    0.546366
+label7    0.727437
+Name: mean_iou, dtype: float64
+all - Epoch: 14, accuracy= 0.952500, mIoU= 0.855420 loss= 0.341236
+all - Category_IOU
+label0    0.943609
+label1    0.778491
+label2    0.971489
+label3    0.951489
+label4    0.949358
+label5    0.872913
+label6    0.618293
+label7    0.757717
+Name: mean_iou, dtype: float64
+all - Epoch: 16, accuracy= 0.961812, mIoU= 0.886833 loss= 0.291185
+all - Category_IOU
+label0    0.950498
+label1    0.808544
+label2    0.970480
+label3    0.960481
+label4    0.956489
+label5    0.908231
+label6    0.736777
+label7    0.803165
+Name: mean_iou, dtype: float64
+all - Epoch: 18, accuracy= 0.969500, mIoU= 0.914187 loss= 0.249900
+all - Category_IOU
+label0    0.954295
+label1    0.816856
+label2    0.975211
+label3    0.963027
+label4    0.962538
+label5    0.906780
+label6    0.837408
+label7    0.897380
+Name: mean_iou, dtype: float64
+all - Epoch: 20, accuracy= 0.972437, mIoU= 0.923135 loss= 0.218852
+all - Category_IOU
+label0    0.957646
+label1    0.820155
+label2    0.976720
+label3    0.970639
+label4    0.964751
+label5    0.925785
+label6    0.864365
+label7    0.905022
+Name: mean_iou, dtype: float64
+all - Epoch: 22, accuracy= 0.976250, mIoU= 0.934799 loss= 0.202097
+all - Category_IOU
+label0    0.961968
+label1    0.845779
+label2    0.979852
+label3    0.974026
+label4    0.964751
+label5    0.940891
+label6    0.885366
+label7    0.925759
+Name: mean_iou, dtype: float64
+all - Epoch: 24, accuracy= 0.978938, mIoU= 0.943380 loss= 0.186209
+all - Category_IOU
+label0    0.965354
+label1    0.874380
+label2    0.982970
+label3    0.974003
+label4    0.967791
+label5    0.945736
+label6    0.904294
+label7    0.932508
+Name: mean_iou, dtype: float64
+all - Epoch: 26, accuracy= 0.981062, mIoU= 0.949118 loss= 0.171197
+all - Category_IOU
+label0    0.968414
+label1    0.879479
+label2    0.984542
+label3    0.978242
+label4    0.973056
+label5    0.948544
+label6    0.917488
+label7    0.943182
+Name: mean_iou, dtype: float64
+all - Epoch: 28, accuracy= 0.981563, mIoU= 0.949951 loss= 0.157628
+all - Category_IOU
+label0    0.969053
+label1    0.878583
+label2    0.987186
+label3    0.978242
+label4    0.974596
+label5    0.946602
+label6    0.919951
+label7    0.945392
+Name: mean_iou, dtype: float64
+all - Epoch: 30, accuracy= 0.984313, mIoU= 0.959168 loss= 0.145151
+all - Category_IOU
+label0    0.972425
+label1    0.900332
+label2    0.986126
+label3    0.981707
+label4    0.979118
+label5    0.956989
+label6    0.936646
+label7    0.960000
+Name: mean_iou, dtype: float64
+all - Epoch: 32, accuracy= 0.985125, mIoU= 0.960608 loss= 0.133570
+all - Category_IOU
+label0    0.974383
+label1    0.911223
+label2    0.986652
+label3    0.981691
+label4    0.982184
+label5    0.963654
+label6    0.927607
+label7    0.957471
+Name: mean_iou, dtype: float64
+all - Epoch: 34, accuracy= 0.986875, mIoU= 0.966011 loss= 0.123241
+all - Category_IOU
+label0    0.976682
+label1    0.923986
+label2    0.988235
+label3    0.984279
+label4    0.985248
+label5    0.964602
+label6    0.942857
+label7    0.962199
+Name: mean_iou, dtype: float64
+all - Epoch: 36, accuracy= 0.987313, mIoU= 0.966348 loss= 0.113852
+all - Category_IOU
+label0    0.977938
+label1    0.931208
+label2    0.990899
+label3    0.987741
+label4    0.986801
+label5    0.960630
+label6    0.934649
+label7    0.960920
+Name: mean_iou, dtype: float64
+all - Epoch: 38, accuracy= 0.988688, mIoU= 0.970440 loss= 0.105223
+all - Category_IOU
+label0    0.979782
+label1    0.933898
+label2    0.991966
+label3    0.988606
+label4    0.986047
+label5    0.966469
+label6    0.947891
+label7    0.968858
+Name: mean_iou, dtype: float64
+all - Epoch: 40, accuracy= 0.989250, mIoU= 0.971837 loss= 0.098071
+all - Category_IOU
+label0    0.981167
+label1    0.945763
+label2    0.991430
+label3    0.989474
+label4    0.989122
+label5    0.963511
+label6    0.945409
+label7    0.968822
+Name: mean_iou, dtype: float64
+all - Epoch: 42, accuracy= 0.990125, mIoU= 0.974016 loss= 0.094194
+all - Category_IOU
+label0    0.982550
+label1    0.949066
+label2    0.993566
+label3    0.990342
+label4    0.989122
+label5    0.968348
+label6    0.950311
+label7    0.968822
+Name: mean_iou, dtype: float64
+all - Epoch: 44, accuracy= 0.990812, mIoU= 0.976012 loss= 0.090365
+all - Category_IOU
+label0    0.983708
+label1    0.955556
+label2    0.993566
+label3    0.989474
+label4    0.991440
+label5    0.969368
+label6    0.953923
+label7    0.971065
+Name: mean_iou, dtype: float64
+all - Epoch: 46, accuracy= 0.991500, mIoU= 0.977460 loss= 0.086855
+all - Category_IOU
+label0    0.984981
+label1    0.953925
+label2    0.995172
+label3    0.989474
+label4    0.991440
+label5    0.970326
+label6    0.958750
+label7    0.975610
+Name: mean_iou, dtype: float64
+all - Epoch: 48, accuracy= 0.991812, mIoU= 0.978491 loss= 0.083253
+all - Category_IOU
+label0    0.985322
+label1    0.957338
+label2    0.994638
+label3    0.990342
+label4    0.992985
+label5    0.975198
+label6    0.956468
+label7    0.975638
+Name: mean_iou, dtype: float64
+all - Epoch: 50, accuracy= 0.992437, mIoU= 0.980025 loss= 0.079937
+all - Category_IOU
+label0    0.986485
+label1    0.962199
+label2    0.996245
+label3    0.990351
+label4    0.992212
+label5    0.977160
+label6    0.958801
+label7    0.976744
+Name: mean_iou, dtype: float64
+all - Epoch: 52, accuracy= 0.993000, mIoU= 0.981500 loss= 0.076579
+all - Category_IOU
+label0    0.987522
+label1    0.969125
+label2    0.996779
+label3    0.991220
+label4    0.993765
+label5    0.979125
+label6    0.958853
+label7    0.975610
+Name: mean_iou, dtype: float64
+all - Epoch: 54, accuracy= 0.993000, mIoU= 0.981373 loss= 0.073437
+all - Epoch: 56, accuracy= 0.993625, mIoU= 0.982730 loss= 0.070319
+all - Category_IOU
+label0    0.988687
+label1    0.968966
+label2    0.998388
+label3    0.992098
+label4    0.994540
+label5    0.980119
+label6    0.958853
+label7    0.980186
+Name: mean_iou, dtype: float64
+all - Epoch: 58, accuracy= 0.994125, mIoU= 0.984184 loss= 0.067455
+all - Category_IOU
+label0    0.989497
+label1    0.970790
+label2    0.998388
+label3    0.992970
+label4    0.994540
+label5    0.981113
+label6    0.963659
+label7    0.982517
+Name: mean_iou, dtype: float64
+all - Epoch: 60, accuracy= 0.994500, mIoU= 0.985399 loss= 0.065086
+all - Category_IOU
+label0    0.990079
+label1    0.974138
+label2    0.998388
+label3    0.992970
+label4    0.993765
+label5    0.984064
+label6    0.966123
+label7    0.983664
+Name: mean_iou, dtype: float64
+all - Epoch: 62, accuracy= 0.994500, mIoU= 0.985352 loss= 0.063785
+all - Epoch: 64, accuracy= 0.994500, mIoU= 0.985156 loss= 0.062586
+all - Epoch: 66, accuracy= 0.994812, mIoU= 0.986231 loss= 0.061297
+all - Category_IOU
+label0    0.990661
+label1    0.975862
+label2    0.998388
+label3    0.994723
+label4    0.993765
+label5    0.983068
+label6    0.968553
+label7    0.984831
+Name: mean_iou, dtype: float64
+all - Epoch: 68, accuracy= 0.995188, mIoU= 0.987252 loss= 0.060045
+all - Category_IOU
+label0    0.991357
+label1    0.977547
+label2    0.998388
+label3    0.995602
+label4    0.993765
+label5    0.983068
+label6    0.972292
+label7    0.985998
+Name: mean_iou, dtype: float64
+all - Epoch: 70, accuracy= 0.995563, mIoU= 0.988183 loss= 0.058858
+all - Category_IOU
+label0    0.992056
+label1    0.977547
+label2    0.998388
+label3    0.994728
+label4    0.994540
+label5    0.985045
+label6    0.976010
+label7    0.987150
+Name: mean_iou, dtype: float64
+all - Epoch: 72, accuracy= 0.995812, mIoU= 0.988830 loss= 0.057594
+all - Category_IOU
+label0    0.992525
+label1    0.980936
+label2    0.998388
+label3    0.995602
+label4    0.994540
+label5    0.988000
+label6    0.973518
+label7    0.987135
+Name: mean_iou, dtype: float64
+all - Epoch: 74, accuracy= 0.996125, mIoU= 0.989855 loss= 0.056364
+all - Category_IOU
+label0    0.992990
+label1    0.984375
+label2    0.998925
+label3    0.995602
+label4    0.994540
+label5    0.988000
+label6    0.977244
+label7    0.987165
+Name: mean_iou, dtype: float64
+all - Epoch: 76, accuracy= 0.996375, mIoU= 0.990726 loss= 0.055219
+all - Category_IOU
+label0    0.993342
+label1    0.987805
+label2    0.998925
+label3    0.996479
+label4    0.994540
+label5    0.988989
+label6    0.979747
+label7    0.985981
+Name: mean_iou, dtype: float64
+all - Epoch: 78, accuracy= 0.996750, mIoU= 0.991660 loss= 0.054026
+all - Category_IOU
+label0    0.994041
+label1    0.989529
+label2    0.998925
+label3    0.996479
+label4    0.996094
+label5    0.988989
+label6    0.979747
+label7    0.989474
+Name: mean_iou, dtype: float64
+all - Epoch: 80, accuracy= 0.996812, mIoU= 0.991798 loss= 0.053049
+all - Category_IOU
+label0    0.994158
+label1    0.989529
+label2    0.998925
+label3    0.996479
+label4    0.996094
+label5    0.989980
+label6    0.979747
+label7    0.989474
+Name: mean_iou, dtype: float64
+all - Epoch: 82, accuracy= 0.996812, mIoU= 0.991788 loss= 0.052501
+all - Epoch: 84, accuracy= 0.997062, mIoU= 0.992522 loss= 0.051948
+all - Category_IOU
+label0    0.994624
+label1    0.991259
+label2    0.998925
+label3    0.996479
+label4    0.996094
+label5    0.989980
+label6    0.981013
+label7    0.991803
+Name: mean_iou, dtype: float64
+all - Epoch: 86, accuracy= 0.997062, mIoU= 0.992522 loss= 0.051413
+all - Epoch: 88, accuracy= 0.997062, mIoU= 0.992484 loss= 0.050856
+all - Epoch: 90, accuracy= 0.997375, mIoU= 0.993221 loss= 0.050325
+all - Category_IOU
+label0    0.995208
+label1    0.991259
+label2    0.998925
+label3    0.998236
+label4    0.996094
+label5    0.991968
+label6    0.982278
+label7    0.991803
+Name: mean_iou, dtype: float64
+all - Epoch: 92, accuracy= 0.997375, mIoU= 0.993191 loss= 0.049799
+all - Epoch: 94, accuracy= 0.997500, mIoU= 0.993460 loss= 0.049258
+all - Category_IOU
+label0    0.995442
+label1    0.989529
+label2    0.998925
+label3    0.998236
+label4    0.996094
+label5    0.992965
+label6    0.983523
+label7    0.992966
+Name: mean_iou, dtype: float64
+all - Epoch: 96, accuracy= 0.997500, mIoU= 0.993530 loss= 0.048822
+all - Epoch: 98, accuracy= 0.997437, mIoU= 0.993330 loss= 0.048312
+all - Epoch: 100, accuracy= 0.997437, mIoU= 0.993330 loss= 0.047967
+all - Epoch: 102, accuracy= 0.997500, mIoU= 0.993442 loss= 0.047748
+all - Epoch: 104, accuracy= 0.997563, mIoU= 0.993664 loss= 0.047338
+all - Category_IOU
+label0    0.995558
+label1    0.991259
+label2    0.998925
+label3    0.998236
+label4    0.996875
+label5    0.991968
+label6    0.983523
+label7    0.992966
+Name: mean_iou, dtype: float64
+all - Epoch: 106, accuracy= 0.997500, mIoU= 0.993444 loss= 0.047060
+all - Epoch: 108, accuracy= 0.997687, mIoU= 0.994159 loss= 0.046879
+all - Category_IOU
+label0    0.995675
+label1    0.993007
+label2    0.999462
+label3    0.998236
+label4    0.996097
+label5    0.992965
+label6    0.986023
+label7    0.991803
+Name: mean_iou, dtype: float64
+all - Epoch: 110, accuracy= 0.997687, mIoU= 0.994147 loss= 0.046527
+all - Epoch: 112, accuracy= 0.997687, mIoU= 0.994060 loss= 0.046200
+all - Epoch: 114, accuracy= 0.997687, mIoU= 0.994120 loss= 0.046081
+all - Epoch: 116, accuracy= 0.997812, mIoU= 0.994311 loss= 0.045796
+all - Category_IOU
+label0    0.995909
+label1    0.991274
+label2    0.999462
+label3    0.998236
+label4    0.997654
+label5    0.992965
+label6    0.986023
+label7    0.992966
+Name: mean_iou, dtype: float64
+all - Epoch: 118, accuracy= 0.997750, mIoU= 0.994140 loss= 0.045485
+all - Epoch: 120, accuracy= 0.997750, mIoU= 0.994259 loss= 0.045232
+all - Epoch: 122, accuracy= 0.997875, mIoU= 0.994511 loss= 0.045148
+all - Category_IOU
+label0    0.996026
+label1    0.993007
+label2    0.999462
+label3    0.998236
+label4    0.997654
+label5    0.993964
+label6    0.984772
+label7    0.992966
+Name: mean_iou, dtype: float64
+all - Epoch: 124, accuracy= 0.997875, mIoU= 0.994542 loss= 0.045002
+all - Epoch: 126, accuracy= 0.997875, mIoU= 0.994542 loss= 0.044830
+all - Epoch: 128, accuracy= 0.997875, mIoU= 0.994477 loss= 0.044679
+all - Epoch: 130, accuracy= 0.997875, mIoU= 0.994446 loss= 0.044579
+all - Epoch: 132, accuracy= 0.997875, mIoU= 0.994337 loss= 0.044432
+all - Epoch: 134, accuracy= 0.998125, mIoU= 0.995154 loss= 0.044366
+all - Category_IOU
+label0    0.996493
+label1    0.993007
+label2    0.999462
+label3    0.998236
+label4    0.997656
+label5    0.994965
+label6    0.987277
+label7    0.994131
+Name: mean_iou, dtype: float64
+all - Epoch: 136, accuracy= 0.998000, mIoU= 0.994783 loss= 0.044136
+all - Epoch: 138, accuracy= 0.998062, mIoU= 0.994922 loss= 0.044042
+all - Epoch: 140, accuracy= 0.998125, mIoU= 0.995062 loss= 0.044005
+all - Epoch: 142, accuracy= 0.998188, mIoU= 0.995293 loss= 0.043876
+all - Category_IOU
+label0    0.996610
+label1    0.993007
+label2    0.999462
+label3    0.998236
+label4    0.997656
+label5    0.995968
+label6    0.987277
+label7    0.994131
+Name: mean_iou, dtype: float64
+all - Epoch: 144, accuracy= 0.998188, mIoU= 0.995293 loss= 0.043647
+all - Epoch: 146, accuracy= 0.998125, mIoU= 0.995122 loss= 0.043590
+all - Epoch: 148, accuracy= 0.998125, mIoU= 0.995062 loss= 0.043581
+all - Epoch: 150, accuracy= 0.998188, mIoU= 0.995234 loss= 0.043522
+all - Epoch: 152, accuracy= 0.998188, mIoU= 0.995293 loss= 0.043375
+all - Epoch: 154, accuracy= 0.998125, mIoU= 0.995051 loss= 0.043346
+all - Epoch: 156, accuracy= 0.998250, mIoU= 0.995363 loss= 0.043325
+all - Category_IOU
+label0    0.996726
+label1    0.991274
+label2    0.999462
+label3    0.998236
+label4    0.997656
+label5    0.996976
+label6    0.987277
+label7    0.995300
+Name: mean_iou, dtype: float64
+all - Epoch: 158, accuracy= 0.998313, mIoU= 0.995595 loss= 0.043152
+all - Category_IOU
+label0    0.996843
+label1    0.993007
+label2    0.999462
+label3    0.998236
+label4    0.997656
+label5    0.996976
+label6    0.987277
+label7    0.995300
+Name: mean_iou, dtype: float64
+all - Epoch: 160, accuracy= 0.998313, mIoU= 0.995595 loss= 0.043013
+all - Epoch: 162, accuracy= 0.998375, mIoU= 0.995827 loss= 0.043014
+all - Category_IOU
+label0    0.996960
+label1    0.993007
+label2    0.999462
+label3    0.998236
+label4    0.996875
+label5    0.996976
+label6    0.989796
+label7    0.995300
+Name: mean_iou, dtype: float64
+all - Epoch: 164, accuracy= 0.998437, mIoU= 0.995939 loss= 0.042842
+all - Category_IOU
+label0    0.997077
+label1    0.993007
+label2    0.999462
+label3    0.998236
+label4    0.997656
+label5    0.996976
+label6    0.989796
+label7    0.995300
+Name: mean_iou, dtype: float64
+all - Epoch: 166, accuracy= 0.998313, mIoU= 0.995535 loss= 0.042739
+all - Epoch: 168, accuracy= 0.998437, mIoU= 0.995999 loss= 0.042732
+all - Epoch: 170, accuracy= 0.998500, mIoU= 0.996171 loss= 0.042587
+all - Category_IOU
+label0    0.997194
+label1    0.994746
+label2    0.999462
+label3    0.998236
+label4    0.997656
+label5    0.996976
+label6    0.989796
+label7    0.995300
+Name: mean_iou, dtype: float64
+all - Epoch: 172, accuracy= 0.998437, mIoU= 0.995882 loss= 0.042462
+all - Epoch: 174, accuracy= 0.998437, mIoU= 0.995973 loss= 0.042449
+all - Epoch: 176, accuracy= 0.998375, mIoU= 0.995709 loss= 0.042398
+all - Epoch: 178, accuracy= 0.998313, mIoU= 0.995479 loss= 0.042300
+all - Epoch: 180, accuracy= 0.998437, mIoU= 0.995940 loss= 0.042186
+all - Epoch: 182, accuracy= 0.998375, mIoU= 0.995709 loss= 0.042043
+all - Epoch: 184, accuracy= 0.998437, mIoU= 0.995882 loss= 0.041967
+all - Epoch: 186, accuracy= 0.998375, mIoU= 0.995709 loss= 0.041867
+all - Epoch: 188, accuracy= 0.998500, mIoU= 0.996052 loss= 0.041780
+all - Epoch: 190, accuracy= 0.998437, mIoU= 0.995821 loss= 0.041748
+all - Epoch: 192, accuracy= 0.998563, mIoU= 0.996225 loss= 0.041650
+all - Category_IOU
+label0    0.997311
+label1    0.993007
+label2    0.999462
+label3    0.998236
+label4    0.998436
+label5    0.996976
+label6    0.991071
+label7    0.995300
+Name: mean_iou, dtype: float64
+all - Epoch: 194, accuracy= 0.998687, mIoU= 0.996690 loss= 0.041547
+all - Category_IOU
+label0    0.997544
+label1    0.996491
+label2    0.999462
+label3    0.998236
+label4    0.998436
+label5    0.996976
+label6    0.991071
+label7    0.995300
+Name: mean_iou, dtype: float64
+all - Epoch: 196, accuracy= 0.998563, mIoU= 0.996225 loss= 0.041373
+all - Epoch: 198, accuracy= 0.998625, mIoU= 0.996457 loss= 0.041368

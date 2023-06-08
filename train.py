@@ -16,9 +16,9 @@ from TSGCNet import TSGCNet
 import random
 
 if __name__ == "__main__":
-    os.environ["CUDA_VISIBLE_DEVICES"] = '0, 1'
+    os.environ["CUDA_VISIBLE_DEVICES"] = '0'
     """-------------------------- parameters --------------------------------------"""
-    batch_size = 2
+    batch_size = 20
     k = 32
 
     """--------------------------- create Folder ----------------------------------"""
@@ -48,7 +48,7 @@ if __name__ == "__main__":
 
     """--------------------------- Build Network and optimizer----------------------"""
     model = TSGCNet(in_channels=12, output_channels=8, k=k)
-    model = torch.nn.DataParallel(model, device_ids=[0,1])
+    model = torch.nn.DataParallel(model, device_ids=[0])
     model.cuda()
     optimizer = torch.optim.Adam(
     model.parameters(),
@@ -85,7 +85,7 @@ if __name__ == "__main__":
             loss.backward()
             optimizer.step()
             his_loss.append(loss.cpu().data.numpy())
-        if epoch % 10 == 0:
+        if epoch % 2 == 0:
             print('Learning rate: %f' % (lr))
             print("loss: %f" % (np.mean(his_loss)))
             writer.add_scalar("loss", np.mean(his_loss), epoch)

@@ -1,0 +1,6 @@
+torch==1.4.0
+numpy==1.19.0
+plyfile==0.7.1
+tqdm
+tensorboardX==2.6
+pandas
