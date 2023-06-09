@@ -1,2 +1,3 @@
 experiment/maiqi/checkpoints
 experiment/maiqi/tensorboard
+__pycache__

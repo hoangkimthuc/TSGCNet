@@ -16,7 +16,7 @@ from TSGCNet import TSGCNet
 import random
 
 if __name__ == "__main__":
-    os.environ["CUDA_VISIBLE_DEVICES"] = '0'
+    # os.environ["CUDA_VISIBLE_DEVICES"] = '0'
     """-------------------------- parameters --------------------------------------"""
     batch_size = 20
     k = 32
@@ -48,8 +48,10 @@ if __name__ == "__main__":
 
     """--------------------------- Build Network and optimizer----------------------"""
     model = TSGCNet(in_channels=12, output_channels=8, k=k)
-    model = torch.nn.DataParallel(model, device_ids=[0])
-    model.cuda()
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    torch.cuda.empty_cache()
+    # model = torch.nn.DataParallel(model, device_ids=[0])
+    model.to(device)
     optimizer = torch.optim.Adam(
     model.parameters(),
         lr=1e-3,
@@ -97,7 +99,7 @@ if __name__ == "__main__":
                 best_acc = metrics['accuracy']
                 print("best accuracy: %f best mIoU :%f" % (best_acc, mIoU))
                 print(cat_iou)
-                torch.save(model.state_dict(), '%s/coordinate_%d_%f.pth' % (checkpoints, epoch, best_acc))
+                # torch.save(model.state_dict(), '%s/coordinate_%d_%f.pth' % (checkpoints, epoch, best_acc))
                 best_pth = '%s/coordinate_%d_%f.pth' % (checkpoints, epoch, best_acc)
                 logger.info(cat_iou)
             his_loss.clear()
