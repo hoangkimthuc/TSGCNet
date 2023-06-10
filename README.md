@@ -1,5 +1,9 @@
 # Two-Stream Graph Convolutional Network for Intra-Oral Scanner Image Segmentation
 
+## Important remarks
+1. The author only share 1 data for reference, which is used for both training and testing. That's why the model is overfitting and can't generalize to larger dataset --> action: Find a large dataset and test model performance.
+2. The 2-stream models could be replaced by a simpler approach: positional embedding. This could also potentially improve the learned representation of vertexes and normal vectors.
+3. Need to validated against sota 3D semantic segmantation models: Spherical Transformer, LCPFormer... as well as large public data set like CTooth.
 ## Instructions for running the training script and visualize results
 1. Create conda env
 ```bash
