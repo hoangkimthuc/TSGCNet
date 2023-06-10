@@ -1,5 +1,23 @@
 # Two-Stream Graph Convolutional Network for Intra-Oral Scanner Image Segmentation
 
+## Instructions for running the training script and visualize results
+1. Create conda env
+```bash
+conda env create -f env.yml
+conda activate TSGCNet
+pip install -r requirements.txt
+```
+2. Run the training scripts
+```bash
+python train.py --num_epochs=30
+```
+3. Visualize result
+```bash
+python visualization.py
+```
+Label (ground truth image teeth segmentation)
+
+
 ## Prequisites
 * python 3.7.4
 * pytorch 1.4.0
