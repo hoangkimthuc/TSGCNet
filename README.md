@@ -15,8 +15,19 @@ python train.py --num_epochs=30
 ```bash
 python visualization.py
 ```
-Label (ground truth image teeth segmentation)
+Below is the result after training 1, 20, and 30 epochs and Label (ground truth image of teeth segmentation)
 
+### Label
+![alt text](https://github.com/hoangkimthuc/TSGCNet/blob/main/output/label.png?raw=true)
+
+### Result after training 1 epoch
+![alt text](https://github.com/hoangkimthuc/TSGCNet/blob/main/output/output_1epoch.png?raw=true)
+
+### Result after training 20 epochs
+![alt text](https://github.com/hoangkimthuc/TSGCNet/blob/main/output/output_20epoch.png?raw=true)
+
+### Result after training 30 epochs
+![alt text](https://github.com/hoangkimthuc/TSGCNet/blob/main/output/output_30epoch.png?raw=true)
 
 ## Prequisites
 * python 3.7.4
