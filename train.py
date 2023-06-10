@@ -14,11 +14,18 @@ import logging
 from utils import test_semseg
 from TSGCNet import TSGCNet
 import random
+import argparse
 
 if __name__ == "__main__":
     # os.environ["CUDA_VISIBLE_DEVICES"] = '0'
     """-------------------------- parameters --------------------------------------"""
-    batch_size = 20
+    ## add ArgumentParser
+    parser = argparse.ArgumentParser(description='Training and testing TSGCNet')
+    parser.add_argument('--num_epochs', type=int, default=30, help='number of epochs to train (default: 30)')
+    args = parser.parse_args()
+    num_epochs = args.num_epochs
+
+    batch_size = 1
     k = 32
 
     """--------------------------- create Folder ----------------------------------"""
@@ -68,8 +75,7 @@ if __name__ == "__main__":
     his_loss = []
     his_smotth = []
     class_weights = torch.ones(15).cuda()
-    num_epoch = 30
-    for epoch in range(0, num_epoch):
+    for epoch in range(0, num_epochs):
         scheduler.step()
         lr = max(optimizer.param_groups[0]['lr'], LEARNING_RATE_CLIP)
         optimizer.param_groups[0]['lr'] = lr
@@ -89,7 +95,7 @@ if __name__ == "__main__":
             loss.backward()
             optimizer.step()
             his_loss.append(loss.cpu().data.numpy())
-        if epoch == num_epoch-1:
+        if epoch == num_epochs-1:
             print('Learning rate: %f' % (lr))
             print("loss: %f" % (np.mean(his_loss)))
             writer.add_scalar("loss", np.mean(his_loss), epoch)
