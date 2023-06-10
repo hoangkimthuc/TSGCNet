@@ -8,7 +8,7 @@
 ## Important changes made to the original code
 1. Add conda env for result reproducibility.
 2. Build the CLI for the training script and fix the generate flyfile function to make it work.
-3. Add visualization to the results.
+3. Add visualization for the results.
 
 ## Instructions for running the training script and visualize results
 1. Create conda env
