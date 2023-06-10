@@ -9,7 +9,26 @@ labels = ((255, 255, 255), (255, 0, 0), (255, 125, 0),(255, 255, 0), (0, 255, 0)
           (0, 0, 255), (255, 0, 255))
 
 
-
+def labels_change_color(color_label):
+    if color_label.item()==0:
+        return [255, 255, 255]
+    elif color_label.item()==1:
+        return [255, 0, 0]
+    elif color_label.item()==2:
+        return [255, 125, 0]
+    elif color_label.item()==3:
+        return [255, 255, 0]
+    elif color_label.item()==4:
+        return [0, 255, 0]
+    elif color_label.item()==5:
+        return [0, 255, 255]
+    elif color_label.item()==6:
+        return [0, 0, 255]
+    elif color_label.item()==7:
+        return [255, 0, 255]
+    else:
+        return [0, 0, 0]
+    
 def get_data(path=""):
     labels = ([255,255,255], [255, 0, 0], [255, 125, 0], [255, 255, 0], [0, 255, 0], [0, 255, 255],
               [0, 0, 255], [255, 0, 255])
@@ -62,38 +81,11 @@ def generate_plyfile(index_face, point_face, label_face, path= " "):
     flag = np.zeros([unique_index.max()+1, 2]).astype('uint64')
     order = 0
     with open(path, "a") as f:
-        f.write("ply\n")
-        f.write("format ascii 1.0\n")
-        f.write("comment VCGLIB generated\n")
-        f.write("element vertex " + str(unique_index.shape[0]) + "\n")
-        f.write("property float x\n")
-        f.write("property float y\n")
-        f.write("property float z\n")
-        f.write("property float nx\n")
-        f.write("property float ny\n")
-        f.write("property float nz\n")
-        f.write("element face " + str(index_face.shape[0]) + "\n")
-        f.write("property list uchar int vertex_indices\n")
-        f.write("property uchar red\n")
-        f.write("property uchar green\n")
-        f.write("property uchar blue\n")
-        f.write("property uchar alpha\n")
-        f.write("end_header\n")
-        for i, index in enumerate(index_face):
-            for j, data in enumerate(index):
-                if flag[data, 0] == 0:  # if this point has not been wrote
-                    xyz = point_face[i, 3*j:3*(j+1)]  # Get coordinate
-                    xyz_nor = point_face[i, 3*(j+3):3*(j+4)]
-                    f.write(str(xyz[0]) + " " + str(xyz[1]) + " " + str(xyz[2]) + " " + str(xyz_nor[0]) + " "
-                            + str(xyz_nor[1]) + " " + str(xyz_nor[2]) + "\n")
-                    flag[data, 0] = 1  # this point has been wrote
-                    flag[data, 1] = order  # give point a new index
-                    order = order + 1  # index add 1 for next point
-
-        for i, data in enumerate(index_face):  # write new point index for every face
-            RGB = labels_change_color[label_face[i, 0]]  # Get RGB value according to face label
-            f.write(str(3) + " " + str(int(flag[data[0], 1])) + " " + str(int(flag[data[1], 1])) + " "
-                    + str(int(flag[data[2], 1])) + " " + str(RGB[0]) + " " + str(RGB[1]) + " "
+        
+        for i in range(len(label_face)):  # write new point index for every face
+            RGB = labels_change_color(label_face[i])  # Get RGB value according to face label
+            f.write(str(3) + " " + str(index_face[i][0]) + " " + str(index_face[i][1]) + " "
+                    + str(index_face[i][2]) + " " + str(RGB[0]) + " " + str(RGB[1]) + " "
                     + str(RGB[2]) + " " + str(255) + "\n")
         f.close()
 

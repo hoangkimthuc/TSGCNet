@@ -7,8 +7,7 @@ from tqdm import tqdm
 from collections import defaultdict
 import pandas as pd
 
-from dataloader import generate_plyfile, plydataset
-
+from plyfile import PlyData, PlyElement
 
 
 
@@ -91,7 +90,7 @@ def test_semseg(model, loader, num_classes = 8, gpu=True, generate_ply=False):
         label_face = pred_choice.cpu().reshape(pred_choice.shape[0], 1)
         if generate_ply:
                #label_face=label_optimization(index_face, label_face)
-               generate_plyfile(index_face, points_face, label_face, path=("pred_global/%s") % name)
+               generate_plyfile(index_face, points_face, label_face, path_in="output/output.ply", path_out="output/output_1.ply")
     iou_tabel[:,2] = iou_tabel[:,0] /iou_tabel[:,1]
     hist_acc += metrics['accuracy']
     metrics['accuracy'] = np.mean(metrics['accuracy'])
@@ -103,8 +102,52 @@ def test_semseg(model, loader, num_classes = 8, gpu=True, generate_ply=False):
 
     return metrics, mIoU, cat_iou
 
+def labels_change_color(color_label):
+    if color_label.item()==0:
+        return [255, 255, 255]
+    elif color_label.item()==1:
+        return [255, 0, 0]
+    elif color_label.item()==2:
+        return [255, 125, 0]
+    elif color_label.item()==3:
+        return [255, 255, 0]
+    elif color_label.item()==4:
+        return [0, 255, 0]
+    elif color_label.item()==5:
+        return [0, 255, 255]
+    elif color_label.item()==6:
+        return [0, 0, 255]
+    elif color_label.item()==7:
+        return [255, 0, 255]
+    else:
+        return [0, 0, 0]
+    
+def generate_plyfile(index_face, point_face, label_face, path_in, path_out):
+    """
+    Input:
+        index_face: index of points in a face [N, 3]
+        points_face: 3 points coordinate in a face + 1 center point coordinate [N, 12]
+        label_face: label of face [N, 1]
+        path_in: path to input PLY file
+        path_out: path to save new generated ply file
+    Return:
+    """    
+    with open(path_in, "r") as f:
+        with open(path_out, "w") as g:
+            # copy all lines from path_in to path_out
+            for line in f:
+                g.write(line)
 
+            # append new data at the end of path_out
+            g.write("\n")        
+            for i in range(len(label_face)):  # write new point index for every face
+                RGB = labels_change_color(label_face[i])  # Get RGB value according to face label
+                g.write(str(3) + " " + str(index_face[i][0]) + " " + str(index_face[i][1]) + " "
+                        + str(index_face[i][2]) + " " + str(RGB[0]) + " " + str(RGB[1]) + " "
+                        + str(RGB[2]) + " " + str(255) + "\n")
 
+            g.close()
+        f.close()
 
 
 

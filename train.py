@@ -42,6 +42,7 @@ if __name__ == "__main__":
 
     """-------------------------------- Dataloader --------------------------------"""
     train_dataset = plydataset("data/train")
+    train_dataset[0]
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=4)
     test_dataset = plydataset("data/test")
     test_loader = DataLoader(test_dataset, batch_size=1, shuffle=True, num_workers=1)
@@ -67,7 +68,8 @@ if __name__ == "__main__":
     his_loss = []
     his_smotth = []
     class_weights = torch.ones(15).cuda()
-    for epoch in range(0, 200):
+    num_epoch = 30
+    for epoch in range(0, num_epoch):
         scheduler.step()
         lr = max(optimizer.param_groups[0]['lr'], LEARNING_RATE_CLIP)
         optimizer.param_groups[0]['lr'] = lr
@@ -87,11 +89,11 @@ if __name__ == "__main__":
             loss.backward()
             optimizer.step()
             his_loss.append(loss.cpu().data.numpy())
-        if epoch % 2 == 0:
+        if epoch == num_epoch-1:
             print('Learning rate: %f' % (lr))
             print("loss: %f" % (np.mean(his_loss)))
             writer.add_scalar("loss", np.mean(his_loss), epoch)
-            metrics, mIoU, cat_iou = test_semseg(model, test_loader, num_classes=8)
+            metrics, mIoU, cat_iou = test_semseg(model, test_loader, num_classes=8,generate_ply=True)
             print("Epoch %d, accuracy= %f, mIoU= %f " % (epoch, metrics['accuracy'], mIoU))
             logger.info("Epoch: %d, accuracy= %f, mIoU= %f loss= %f" % (epoch, metrics['accuracy'], mIoU, np.mean(his_loss)))
             writer.add_scalar("accuracy", metrics['accuracy'], epoch)

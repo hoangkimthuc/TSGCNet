@@ -891,3 +891,160 @@ label5    0.877079
 label6    0.666262
 label7    0.772239
 Name: mean_iou, dtype: float64
+all - ------------------train------------------
+all - ------------------train------------------
+all - ------------------train------------------
+all - ------------------train------------------
+all - ------------------train------------------
+all - ------------------train------------------
+all - Epoch: 0, accuracy= 0.373563, mIoU= 0.179863 loss= 2.174838
+all - Category_IOU
+label0    0.476885
+label1    0.310383
+label2    0.037121
+label3    0.066917
+label4    0.126126
+label5    0.051350
+label6    0.063063
+label7    0.307057
+Name: mean_iou, dtype: float64
+all - ------------------train------------------
+all - Epoch: 0, accuracy= 0.501500, mIoU= 0.204158 loss= 2.071154
+all - Category_IOU
+label0    0.615843
+label1    0.200283
+label2    0.309518
+label3    0.044895
+label4    0.091281
+label5    0.074730
+label6    0.065170
+label7    0.231542
+Name: mean_iou, dtype: float64
+all - ------------------train------------------
+all - Epoch: 0, accuracy= 0.381937, mIoU= 0.162166 loss= 2.276352
+all - Category_IOU
+label0    0.471393
+label1    0.222317
+label2    0.000000
+label3    0.114359
+label4    0.150215
+label5    0.057491
+label6    0.123517
+label7    0.158038
+Name: mean_iou, dtype: float64
+all - ------------------train------------------
+all - ------------------train------------------
+all - ------------------train------------------
+all - ------------------train------------------
+all - ------------------train------------------
+all - ------------------train------------------
+all - Epoch: 0, accuracy= 0.376875, mIoU= 0.155105 loss= 2.173780
+all - Category_IOU
+label0    0.463752
+label1    0.322115
+label2    0.230114
+label3    0.062395
+label4    0.056173
+label5    0.038798
+label6    0.063088
+label7    0.004405
+Name: mean_iou, dtype: float64
+all - ------------------train------------------
+all - ------------------train------------------
+all - ------------------train------------------
+all - ------------------train------------------
+all - Epoch: 0, accuracy= 0.492000, mIoU= 0.212222 loss= 2.078184
+all - Category_IOU
+label0    0.579502
+label1    0.320332
+label2    0.259508
+label3    0.066518
+label4    0.078893
+label5    0.113323
+label6    0.051698
+label7    0.228006
+Name: mean_iou, dtype: float64
+all - ------------------train------------------
+all - Epoch: 0, accuracy= 0.262937, mIoU= 0.108743 loss= 2.272525
+all - Category_IOU
+label0    0.241668
+label1    0.184229
+label2    0.202287
+label3    0.034584
+label4    0.008959
+label5    0.061297
+label6    0.072972
+label7    0.063949
+Name: mean_iou, dtype: float64
+all - ------------------train------------------
+all - ------------------train------------------
+all - Epoch: 0, accuracy= 0.364063, mIoU= 0.143341 loss= 2.243099
+all - Category_IOU
+label0    0.466798
+label1    0.281046
+label2    0.049827
+label3    0.133655
+label4    0.018855
+label5    0.001001
+label6    0.097826
+label7    0.097719
+Name: mean_iou, dtype: float64
+all - ------------------train------------------
+all - Epoch: 0, accuracy= 0.390313, mIoU= 0.164088 loss= 2.143617
+all - Category_IOU
+label0    0.418959
+label1    0.230614
+label2    0.217856
+label3    0.002504
+label4    0.096622
+label5    0.022570
+label6    0.092809
+label7    0.230769
+Name: mean_iou, dtype: float64
+all - ------------------train------------------
+all - Epoch: 0, accuracy= 0.527375, mIoU= 0.234671 loss= 1.993411
+all - Category_IOU
+label0    0.610526
+label1    0.263201
+label2    0.293598
+label3    0.095395
+label4    0.212215
+label5    0.099494
+label6    0.013655
+label7    0.289288
+Name: mean_iou, dtype: float64
+all - ------------------train------------------
+all - Epoch: 0, accuracy= 0.329500, mIoU= 0.163968 loss= 2.206129
+all - Category_IOU
+label0    0.262769
+label1    0.333333
+label2    0.216072
+label3    0.068521
+label4    0.129107
+label5    0.064968
+label6    0.051887
+label7    0.185084
+Name: mean_iou, dtype: float64
+all - Epoch: 10, accuracy= 0.926188, mIoU= 0.783595 loss= 0.916833
+all - Category_IOU
+label0    0.927210
+label1    0.762887
+label2    0.932049
+label3    0.894868
+label4    0.858333
+label5    0.721843
+label6    0.470944
+label7    0.700626
+Name: mean_iou, dtype: float64
+all - ------------------train------------------
+all - Epoch: 1, accuracy= 0.648625, mIoU= 0.363606 loss= 1.921831
+all - Category_IOU
+label0    0.716360
+label1    0.424746
+label2    0.465281
+label3    0.279094
+label4    0.078220
+label5    0.355346
+label6    0.163380
+label7    0.426424
+Name: mean_iou, dtype: float64
